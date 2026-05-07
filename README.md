@@ -1,3 +1,8 @@
+# md 파일 수정했음 <br>
+
+- 진짜 하나도 모르겠어요
+
+
 # 💰 가계부 대시보드 (Personal Finance Dashboard)
 
 > Vue 3 + Pinia + json-server를 활용한 현대적이고 반응형 가계부 웹 애플리케이션
