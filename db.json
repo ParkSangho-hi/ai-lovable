@@ -1,0 +1,58 @@
+{
+  "users": [
+    {
+      "id": "u1",
+      "name": "KB 테스트",
+      "email": "kb@example.com",
+      "password": "1234",
+      "createdAt": "2026-05-01T09:00:00.000Z"
+    }
+  ],
+  "profiles": [
+    {
+      "id": "p1",
+      "userId": "u1",
+      "name": "KB 테스트",
+      "email": "kb@example.com",
+      "phone": "010-1234-5678",
+      "job": "Vue3 학습자",
+      "memo": "회원가입/로그인/프로필 보기 실습용 기본 계정입니다."
+    }
+  ],
+  "transactions": [
+    {
+      "id": "t1",
+      "userId": "u1",
+      "type": "income",
+      "amount": 2800000,
+      "category": "급여",
+      "description": "5월 월급",
+      "date": "2026-05-01",
+      "createdAt": "2026-05-01T09:00:00.000Z",
+      "updatedAt": "2026-05-01T09:00:00.000Z"
+    },
+    {
+      "id": "t2",
+      "userId": "u1",
+      "type": "expense",
+      "amount": 62000,
+      "category": "식비",
+      "description": "주간 장보기",
+      "date": "2026-05-03",
+      "createdAt": "2026-05-03T09:00:00.000Z",
+      "updatedAt": "2026-05-03T09:00:00.000Z"
+    },
+    {
+      "id": "t3",
+      "userId": "u1",
+      "type": "expense",
+      "amount": 48000,
+      "category": "교통비",
+      "description": "교통카드 충전",
+      "date": "2026-05-04",
+      "createdAt": "2026-05-04T09:00:00.000Z",
+      "updatedAt": "2026-05-04T09:00:00.000Z"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
