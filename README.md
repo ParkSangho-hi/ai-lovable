@@ -98,6 +98,32 @@ ai-lovable/
 └── README.md
 ```
 
+## 🧩 컴포넌트 구성도 (Mermaid)
+
+```mermaid
+flowchart TD
+  App[App.vue<br/>RouterView] --> Router[Vue Router<br/>/ → Dashboard<br/>/transactions → Transactions]
+  Router --> Dash[views/Dashboard.vue]
+  Router --> Tx[views/Transactions.vue]
+
+  Dash --> Stat[components/StatCard.vue]
+  Dash --> Trend[components/TrendChart.vue<br/>AreaChart]
+  Dash --> Pie[components/PieChart.vue<br/>PieChart]
+
+  Tx --> Store[stores/transactionStore.js (Pinia)]
+  Dash --> Store
+
+  Store --> Api[stores/api.js<br/>axios → json-server /transactions]
+  Api --> DB[(db.json<br/>transactions)]
+
+  Stat -.props.-> StatData[총 수입/지출/잔액/거래건수]
+  Dash -.props.-> TrendData[monthlyTrend → TrendChart]
+  Dash -.props.-> PieData[expenseByCategory → PieChart]
+
+  Dash --> Fetch[Dashboard onMounted → fetchTransactions()]
+  Tx --> Fetch2[Transactions onMounted → fetchTransactions() if empty]
+```
+
 ---
 
 ## 🚀 시작하기
