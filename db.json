@@ -1,4 +1,12 @@
 {
+  "users": [
+    {
+      "id": 1,
+      "email": "test@test.com",
+      "password": "test1234",
+      "name": "테스트 유저"
+    }
+  ],
   "transactions": [
     {
       "id": 1,
